@@ -7,10 +7,14 @@ export default function Message() {
     <div style={styles.container}>
       <h2>Here’s Your Gift 🎁</h2>
       <p>
-        Remember the one thing you've always wanted but never bought?<br />
-        Well, I didn’t get mine either.<br />
-        Because this time, <strong>yours comes first</strong> ❤️<br />
-        We'll choose it together – for your comfort!
+        There’s something you’ve mentioned so many times…
+A little dream of yours that kept getting postponed for one reason or another.
+This year, I thought it’s finally time to make it happen!
+
+But I didn’t want to choose it on my own —
+because only you can decide what comfort truly feels like.
+
+Can you guess what the gift is? 😉
       </p>
       <button style={styles.button} onClick={() => setShowGift(!showGift)}>
         {showGift ? "Hide Gift" : "Show Gift"}
