@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Message() {
-  const [showClue, setShowClue] = useState(false);
+  const [showGift, setShowGift] = useState(false);
 
   return (
     <div style={styles.container}>
@@ -12,11 +12,15 @@ export default function Message() {
         Because this time, <strong>yours comes first</strong> ❤️<br />
         We'll choose it together – for your comfort!
       </p>
-      <button style={styles.button} onClick={() => setShowClue(!showClue)}>
-        {showClue ? "Hide Clue" : "Show Clue"}
+      <button style={styles.button} onClick={() => setShowGift(!showGift)}>
+        {showGift ? "Hide Gift" : "Show Gift"}
       </button>
-      {showClue && (
-        <p style={styles.clue}>Clue: It's where comfort meets dreams — and probably naps too 😉</p>
+      {showGift && (
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/18/15/00/recliner-1839820_1280.jpg"
+          alt="Recliner"
+          style={styles.image}
+        />
       )}
     </div>
   );
@@ -39,9 +43,11 @@ const styles = {
     marginTop: 20,
     cursor: 'pointer'
   },
-  clue: {
+  image: {
     marginTop: 20,
-    fontStyle: 'italic',
-    color: '#92400e'
+    maxWidth: '100%',
+    height: 'auto',
+    borderRadius: 10,
+    boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
   }
 };
