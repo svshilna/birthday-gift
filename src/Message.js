@@ -16,18 +16,18 @@ export default function Message() {
         {showGift ? "Hide Gift" : "Show Gift"}
       </button>
       {showGift && (
-<img
-  src="https://raw.githubusercontent.com/svshilna/birthday-gift/main/images/recliner.png"
-  alt="Recliner"
-  style={{
-    marginTop: 20,
-    maxWidth: '100%',
-    height: 'auto',
-    borderRadius: 10,
-    boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
-  }}
-/>
-
+        <img
+          src="https://raw.githubusercontent.com/svshilna/birthday-gift/main/images/recliner.png"
+          alt="Recliner"
+          style={{
+            marginTop: 20,
+            maxWidth: '100%',
+            height: 'auto',
+            borderRadius: 10,
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+          }}
+        />
+      )}
     </div>
   );
 }
@@ -48,12 +48,5 @@ const styles = {
     borderRadius: 5,
     marginTop: 20,
     cursor: 'pointer'
-  },
-  image: {
-    marginTop: 20,
-    maxWidth: '100%',
-    height: 'auto',
-    borderRadius: 10,
-    boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
   }
 };
