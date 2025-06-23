@@ -8,13 +8,13 @@ export default function Message() {
       <h2>Here’s Your Gift 🎁</h2>
       <p>
         There’s something you’ve mentioned so many times…
-A little dream of yours that kept getting postponed for one reason or another.
-This year, I thought it’s finally time to make it happen!
-
-But I didn’t want to choose it on my own —
+    A little dream of yours that kept getting postponed for one reason or another.
+      This year, I thought it’s finally time to make it happen!
+      
+  But I didn’t want to choose it on my own —
 because only you can decide what comfort truly feels like.
-
-Can you guess what the gift is? 😉
+  
+  Can you guess what the gift is? 😉
       </p>
       <button style={styles.button} onClick={() => setShowGift(!showGift)}>
         {showGift ? "Hide Gift" : "Show Gift"}
