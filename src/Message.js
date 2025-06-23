@@ -17,7 +17,7 @@ export default function Message() {
       </button>
       {showGift && (
         <img
-          src="https://cdn.pixabay.com/photo/2016/11/18/15/00/recliner-1839820_1280.jpg"
+          src="https://github.com/svshilna/birthday-gift/blob/main/images/recliner.png"
           alt="Recliner"
           style={styles.image}
         />
